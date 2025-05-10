@@ -3,4 +3,6 @@
 .field{
     background-color: var(--color-sky-700);
     border-radius: var(--radius-xs);
+    padding-inline: calc(var(--spacing) * 2);
+    padding-block: calc(var(--spacing) * 1);
 }
