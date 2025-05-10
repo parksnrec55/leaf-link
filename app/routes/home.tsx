@@ -3,7 +3,7 @@ import SearchPage from "../SearchPage/SearchPage";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
+    { title: "Leaf Link" },
     { name: "description", content: "Welcome to React Router!" },
   ];
 }

@@ -6,7 +6,7 @@ interface SearchFormProps {
   onSearch: (params: SearchParams) => void;
 }
 
-function SearchForm({ onSearch }: SearchFormProps) {
+export default function SearchForm({ onSearch }: SearchFormProps) {
   const [formData, setFormData] = useState<SearchParams>({});
 
   const handleChange = (
@@ -29,7 +29,7 @@ function SearchForm({ onSearch }: SearchFormProps) {
 
   return (
     <form className="search-form" onSubmit={handleSubmit}>
-      <div className="grid grid-cols-3 gap-3 px-20">
+      <div className="grid grid-cols-3 gap-3 p-10 mx-20 border-2 border-solid border-sky-500 rounded-lg">
         <input className="field" name="name" placeholder="Name" onChange={handleChange} />
         <input className="field"
           name="scientific_name"
@@ -151,15 +151,15 @@ function SearchForm({ onSearch }: SearchFormProps) {
           onChange={handleChange}
         />
 
-        <label>
-          <input className="field" type="checkbox" name="evergreen" onChange={handleChange} />{" "}
+        <label className="cb">
+          <input type="checkbox" name="evergreen" onChange={handleChange} />{" "}
           Evergreen
         </label>
-        <label>
-          <input className="field" type="checkbox" name="specimen" onChange={handleChange} />{" "}
+        <label className="cb">
+          <input  type="checkbox" name="specimen" onChange={handleChange} />{" "}
           Specimen
         </label>
-        <label>
+        <label className="cb">
           <input 
             type="checkbox"
             name="drought_tolerant"
@@ -167,7 +167,7 @@ function SearchForm({ onSearch }: SearchFormProps) {
           />{" "}
           Drought Tolerant
         </label>
-        <label>
+        <label className="cb">
           <input
             type="checkbox"
             name="air_pollution_tolerant"
@@ -175,7 +175,7 @@ function SearchForm({ onSearch }: SearchFormProps) {
           />{" "}
           Air Pollution Tolerant
         </label>
-        <label>
+        <label className="cb">
           <input
             type="checkbox"
             name="clay_soil_tolerant"
@@ -185,9 +185,7 @@ function SearchForm({ onSearch }: SearchFormProps) {
         </label>
       </div>
 
-      <button className="px-20 py-5"type="submit">Search</button>
+      <button className="px-15 mx-20 mt-5 py-5 bg-sky-500 rounded-lg text-sky-100"type="submit">Search</button>
     </form>
   );
 }
-
-export default SearchForm;
