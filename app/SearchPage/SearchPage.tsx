@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import SearchForm from "~/SearchForm/SearchForm";
 
 export default function SearchPage(){
     const[result, setResult] = useState('');
@@ -28,7 +28,7 @@ export default function SearchPage(){
                 </div>
                 <div></div>
             </div>
-
+            <SearchForm onSearch={e => {}}/>
 
         </div>
 );

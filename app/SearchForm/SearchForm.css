@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+.field{
+    background-color: var(--color-sky-700);
+    border-radius: var(--radius-xs);
+}
