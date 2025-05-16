@@ -1,5 +1,6 @@
-import { SearchCriteria, Plant } from '../types/types';
-// Mock plant data
+import type { Plant } from "~/model/Plant";
+import type { SearchCriteria } from "~/model/SearchCriteria";
+
 const mockPlants: Plant[] = [{
   id: 1,
   name: "Snake Plant",

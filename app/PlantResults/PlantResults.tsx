@@ -1,6 +1,6 @@
 import React from 'react';
-import { PlantCard } from './PlantCard';
-import { Plant } from '../types/types';
+import { PlantCard } from '../PlantCard/PlantCard';
+import type { Plant } from '../model/Plant';
 import { Loader2Icon, AlertCircleIcon, LeafIcon } from 'lucide-react';
 interface PlantResultsProps {
   plants: Plant[] | null;
