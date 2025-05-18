@@ -1,5 +1,5 @@
 import React from 'react';
-import type { Plant } from '../model/Plant';
+import type { Plant } from '../../model/Plant';
 import { SunIcon, DropletIcon, RulerIcon } from 'lucide-react';
 interface PlantCardProps {
   plant: Plant;

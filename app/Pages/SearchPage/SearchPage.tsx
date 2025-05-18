@@ -1,6 +1,6 @@
 import { useState } from "react";
-import PlantSearchForm from "~/PlantSearchForm/PlantSearchForm";
-import { PlantResults } from "~/PlantResults/PlantResults";
+import PlantSearchForm from "~/components/PlantSearchForm/PlantSearchForm";
+import { PlantResults } from "~/components/PlantResults/PlantResults";
 import type { SearchCriteria } from "~/model/SearchCriteria";
 import type { Plant } from "~/model/Plant";
 import { searchPlants } from "~/util/MockData";

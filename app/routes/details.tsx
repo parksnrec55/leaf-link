@@ -1,4 +1,4 @@
-import { PlantDetailsPage } from "~/PlantDetailsPage/PlantDetailsPage";
+import { PlantDetailsPage } from "~/Pages/PlantDetailsPage/PlantDetailsPage";
 import type { Route } from "./+types/details";
 import {mockPlant} from "../util/MockPlantDetails";
 

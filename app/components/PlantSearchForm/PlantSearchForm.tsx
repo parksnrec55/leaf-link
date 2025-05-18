@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { SearchIcon, ChevronDownIcon, ChevronUpIcon } from 'lucide-react';
-import type { SearchCriteria } from '../model/SearchCriteria';
+import type { SearchCriteria } from '../../model/SearchCriteria';
 
 interface PlantSearchFormProps {
   onSearch: (criteria: SearchCriteria) => void;
